@@ -11,48 +11,7 @@
 	<meta name="description" content="" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-	<style>
-		.image-banner img {
-			width: 1200px;
-			margin: 0 auto;
-			max-width: 100%;
-			height: auto;
-			display: block;
-		}
-		@media only screen and (max-width : 1200px) {
-			#swiffycontainer {
-				height: 200px !important;
-			}
-			.image-banner img {
-				width: 990px;
-			}
-		}
-		@media only screen and (max-width : 992px) {
-			#swiffycontainer {
-				height: 150px !important;
-			}
-			.image-banner img {
-				width: 750px;
-			}
-		}
-		@media only screen and (max-width : 768px) {
-			#swiffycontainer {
-				height: 90px !important;
-			}
-			.image-banner img {
-				width: 445px;
-			}
-		}
-		@media only screen and (max-width : 480px) {
-			#swiffycontainer {
-				height: 70px !important;
-			}
-			.image-banner img {
-				width: 347px;
-			}
-		}
-	</style>
+	<link rel="stylesheet" href="style.css/?ver=1.2" />
 </head>
 <body>
 
@@ -74,7 +33,7 @@
 <![endif]-->
 
 <script type="text/javascript" src="swiffy.js"></script>
-<script src="shapka.js"></script>
+<script type="text/javascript" src="shapka.js"></script>
 <script type="text/javascript">
 	var stage = new swiffy.Stage(document.getElementById('swiffycontainer'),
 		swiffyobject, {});
