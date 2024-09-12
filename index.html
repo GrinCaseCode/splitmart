@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<style>
+		.image-banner img {
+			width: 1200px;
+			margin: 0 auto;
+			max-width: 100%;
+			height: auto;
+			display: block;
+		}
+		@media only screen and (max-width : 1200px) {
+			#swiffycontainer {
+				height: 200px !important;
+			}
+			.image-banner img {
+				width: 990px;
+			}
+		}
+		@media only screen and (max-width : 992px) {
+			#swiffycontainer {
+				height: 150px !important;
+			}
+			.image-banner img {
+				width: 750px;
+			}
+		}
+		@media only screen and (max-width : 768px) {
+			#swiffycontainer {
+				height: 90px !important;
+			}
+			.image-banner img {
+				width: 445px;
+			}
+		}
+		@media only screen and (max-width : 480px) {
+			#swiffycontainer {
+				height: 60px !important;
+			}
+			.image-banner img {
+				width: 300px;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<br>
+
+	<div id="swiffycontainer" style="height: 240px"></div>
+
+	<br><br>
+	<div class="image-banner">
+		<img src="banner.jpg" alt="alt">
+	</div>
+
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+
+<script type="text/javascript" src="swiffy.js"></script>
+<script src="shapka.js"></script>
+<script type="text/javascript">
+	var stage = new swiffy.Stage(document.getElementById('swiffycontainer'),
+		swiffyobject, {});
+	stage.start();
+
+	function positionOverlay() {
+		$('#swiffycontainer').height($('#swiffycontainer').width() / 4.999);
+	}
+	$(window).on('resize', positionOverlay).trigger('resize');
+
+	</script>
+<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
