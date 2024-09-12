@@ -11,17 +11,22 @@
 	<meta name="description" content="" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="style.css/?ver=1.2" />
+	<link rel="stylesheet" href="css/style.css?ver=1.2" />
 </head>
 <body>
 
-	<br>
+	<div class="container-wrap">
+		<br>
 
-	<div id="swiffycontainer" style="height: 240px"></div>
+		<div id="swiffycontainer" style="height: 240px"></div>
 
-	<br><br>
-	<div class="image-banner">
-		<img src="banner.jpg" alt="alt">
+		<br><br>
+		<div class="image-banner">
+			<img src="img/banner.jpg" alt="alt">
+		</div>
+
+		<br><br>
+
 	</div>
 
 
@@ -31,9 +36,9 @@
 	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 	<script src="libs/respond/respond.min.js"></script>
 <![endif]-->
-
-<script type="text/javascript" src="swiffy.js"></script>
-<script type="text/javascript" src="shapka.js"></script>
+<script src="libs/jquery/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="js/swiffy.js"></script>
+<script type="text/javascript" src="js/shapka.js"></script>
 <script type="text/javascript">
 	var stage = new swiffy.Stage(document.getElementById('swiffycontainer'),
 		swiffyobject, {});

@@ -1,0 +1,17 @@
+.image-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.container-wrap {
+    padding: 0 40px;
+}
+body {
+    margin: 0;
+}
+
+@media only screen and (max-width : 992px) {
+    .container-wrap {
+        padding: 0 15px;
+    }
+}
